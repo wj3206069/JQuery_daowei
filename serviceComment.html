@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>服务评论</title>
+  <!-- build:less -->
+  <!-- endbuild -->
+  <link href="./less/serviceComment.css" rel="stylesheet">
+  <link href="https://cdn.bootcss.com/Swiper/4.3.0/css/swiper.min.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/Swiper/4.3.0/js/swiper.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery/1.3.2/jquery.min.js"></script>
+  <script src="./js/template.js"></script>
+</head>
+<body>
+<div id="app">
+  <header class="header-wrap">
+    <div class="header-content clearFix">
+      <a class="daowei-logo" href="index.html">
+        <img src="img/logo.png" alt="logo">
+      </a>
+      <a class="address" href="javascript:;">
+        <i></i>
+        <span>北京</span><span>切换城市</span>
+      </a>
+      <div class="app-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="active">首页</a></li>
+          <li><a href="javascript:;">到位APP</a></li>
+          <li><a href="serviceProvider.html">服务商</a></li>
+          <li><a href="javascript:;">商家入驻</a></li>
+          <li><a href="javascript:;">关于我们</a></li>
+          <li><a href="javascript:;">商家登录</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="service-info">
+    <div class="service-wrap">
+      <!--<h1>云家政</h1>
+      <p class="businessHours">营业时间：<span class="time1">08:00-18:00</span> 最近可预约时间：<span
+        class="time2">07月31日 14:00</span></p>
+      <div class="service-data clearFix">
+        <div>
+          <p class="count">53582</p>
+          <p class="count-info">成功接单</p>
+        </div>
+        <i class="verticalLine"></i>
+        <div>
+          <p class="count">89%</p>
+          <p class="count-info">接单率</p>
+        </div>
+        <i class="verticalLine"></i>
+        <div>
+          <p class="count">86%</p>
+          <p class="count-info">好评率</p>
+        </div>
+      </div>-->
+    </div>
+  </section>
+  <nav class="user-nav">
+    <div>
+      <ul>
+        <li class="on"><a href="javascript:;">服务项目</a></li>
+        <li><a href="javascript:;">商家简介</a></li>
+        <li><a href="javascript:;">用户评论</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="introduce clearFix">
+    <div class="left-wrap">
+      <div class="service-item">
+        <div class="service-item-header clearFix">
+          <h1>服务项目</h1>
+        </div>
+        <!--<a href="javascript:;" class="clearFix">
+          <div class="imgwrap">
+            <img src="img/thumb.jpg">
+          </div>
+          <div class="information">
+            <h2>家庭保洁</h2>
+            <p class="service-description">家庭保洁服务，2小时起订，服务时间未使用完不做退款处理。 阿姨上门不带保洁工具，</p>
+            <p class="price-info"><span><span class="bigprice">40</span>元/小时</span>原价<em>45</em><i>已售67162</i></p>
+          </div>
+        </a>-->
+      </div>
+      <div class="introduction">
+        <div class="service-item-header clearFix">
+          <h1>商家简介</h1>
+        </div>
+        <div class="business-name">
+          <h2>上海家谐网络科技有限公司<img src="img/renzheng.jpg"  width="48" height="18" alt="renzheng"></h2>
+          <p>云家政是家政服务在线预订平台。我们的目标是让每个家庭都能获得诚信、便捷、有保障的家政服务。云家政拥有国内最大的实名认证家庭服务员数据库，目前平台上有超过100000名专业服务人员；数百个家政服务商，遍布全国主要城市各个社区。 云家政倡导简单、轻松的生活方式。通过把分散的家政服务能力汇集和分配，让中国家庭获得诚信、便捷、有保障的家政服务，解决日常生活中的麻烦事，把更多时间留给自己和家人，提高生活品质。</p>
+        </div>
+      </div>
+      <div class="user-comment" id="lookcomment">
+        <div class="service-item-header clearFix">
+          <h1>用户评论</h1><span>(11761条评论)</span>
+        </div>
+        <ul class="comment-list">
+          <!--<li>
+            <img src="" width="40" height="40">
+            <div class="comment-content">
+              <p class="username">哈哈哈</p>
+              <p class="date">
+                <span>
+                  <img src="img/red_star.png" width="10" height="10">
+                  <img src="img/red_star.png" width="10" height="10">
+                  <img src="img/red_star.png" width="10" height="10">
+                  <img src="img/red_star.png" width="10" height="10">
+                  <img src="img/red_star.png" width="10" height="10">
+                </span>
+                2018-07-30
+              </p>
+              <p class="comment">干事墨迹私底下收钱</p>
+              <p class="point-city"><img src="img/position.jpg" width="9" height="11">上海 普陀区</p>
+            </div>
+          </li>-->
+        </ul>
+      </div>
+      <div class="paging">
+        <ul>
+          <li class="btn pgUp">&lt;上一页</li>
+          <li class="pgNumber pgon">1</li>
+          <li class="pgNumber">2</li>
+          <li class="pgNumber">3</li>
+          <li class="ellipsis ellfront">...</li>
+          <li class="pgNumber">4</li>
+          <li class="pgNumber">5</li>
+          <li class="pgNumber">6</li>
+          <li class="pgNumber">7</li>
+          <li class="pgNumber">8</li>
+          <li class="pgNumber">9</li>
+          <li class="ellipsis ellbehind">...</li>
+          <li class="btn pgDn">下一页&gt;</li>
+        </ul>
+      </div>
+    </div>
+    <div class="right-wrap">
+      <div class="img1"><img src="img/download.png"></div>
+      <div class="img2"><img src="img/daowayApp.png"></div>
+    </div>
+  </section>
+  <section class="guarantee">
+    <h1>到位<span>服务</span>保障</h1>
+    <p>到位平台担保交易安全，交易未成功100%退款</p>
+    <ul>
+      <li><img src="img/anquan.jpg" alt="baozhang">优选服务</li>
+      <li><img src="img/anquan.jpg" alt="baozhang">全程保障</li>
+      <li><img src="img/anquan.jpg" alt="baozhang">安全无忧</li>
+    </ul>
+    <footer class="hot-city clearFix">
+      <h2>热门城市</h2>
+      <div class="cities">
+        <a href="javascript:;">北京</a>
+        <a href="javascript:;">上海</a>
+        <a href="javascript:;">广州</a>
+        <a href="javascript:;">深圳</a>
+        <a href="javascript:;">成都</a>
+        <a href="javascript:;">天津</a>
+        <a href="javascript:;">南京</a>
+        <a href="javascript:;">杭州</a>
+        <a href="javascript:;">重庆</a>
+        <a href="javascript:;">苏州</a>
+        <a href="javascript:;">武汉</a>
+        <a href="javascript:;">长沙</a>
+        <a href="javascript:;">济南</a>
+        <a href="javascript:;">郑州</a>
+        <a href="javascript:;">西安</a>
+        <a href="javascript:;">沈阳</a>
+        <a href="javascript:;">福州</a>
+        <a href="javascript:;">厦门</a>
+        <a href="javascript:;">南昌</a>
+        <a href="javascript:;">合肥</a>
+        <a href="javascript:;">宁波</a>
+        <a href="javascript:;">无锡</a>
+        <a href="javascript:;">青岛</a>
+        <a href="javascript:;">大连</a>
+        <a href="javascript:;">东莞</a>
+        <a href="javascript:;">佛山</a>
+        <a href="javascript:;">石家庄</a>
+        <a href="javascript:;">哈尔滨</a>
+        <a href="javascript:;">太原</a>
+        <a href="javascript:;">昆明</a>
+        <a href="javascript:;">贵阳</a>
+        <a href="javascript:;">南宁</a>
+        <a href="javascript:;">温州</a>
+      </div>
+    </footer>
+  </section>
+  <section class="cooperation">
+    <div class="partners">
+      <p>©2015 版权所有 到位 daoway.com 京ICP备15001471号-1 北京邻家科技有限公司</p>
+    </div>
+  </section>
+</div>
+</body>
+<script id="order" type="text/html">
+  {{each data as value i}}
+  <h1>{{value.name}}</h1>
+  <p class="businessHours">营业时间：<span class="time1">{{value.seredate}}</span> 最近可预约时间：<span
+    class="time2">{{value.servedatalately}}</span></p>
+  <div class="service-data clearFix">
+    <div>
+      <p class="count">{{value.orderCount}}</p>
+      <p class="count-info">成功接单</p>
+    </div>
+    <i class="verticalLine"></i>
+    <div>
+      <p class="count">{{value.accept}}</p>
+      <p class="count-info">接单率</p>
+    </div>
+    <i class="verticalLine"></i>
+    <div>
+      <p class="count">{{value.praise}}</p>
+      <p class="count-info">好评率</p>
+    </div>
+    {{/each}}
+</script>
+<script  id="detailed" type="text/html">
+  {{each data as value i}}
+  <a href="javascript:;" class="clearFix">
+    <div class="imgwrap">
+      <img src={{value.imgUrl}}>
+    </div>
+    <div class="information">
+      <h2>{{value.title}}</h2>
+      <p class="service-description">{{value.servedes}}</p>
+      <p class="price-info"><span><span class="bigprice">{{value.price}}</span>元/小时</span>原价<em>{{value.oldPrice}}</em><i>已售{{value.soldCount}}</i></p>
+    </div>
+  </a>
+  {{/each}}
+</script>
+<script id="fenpage" type="text/html">
+{{each data as value i}}
+<li>
+  <img src={{value.iconUrl}} width="40" height="40">
+  <div class="comment-content">
+    <p class="username">{{value.nick}}</p>
+    <p class="date">
+                <span>
+                  <img src="img/red_star.png" width="10" height="10">
+                  <img src="img/red_star.png" width="10" height="10">
+                  <img src="img/red_star.png" width="10" height="10">
+                  <img src="img/red_star.png" width="10" height="10">
+                  <img src="img/red_star.png" width="10" height="10">
+                </span>
+      {{value.createtime}}
+    </p>
+    <p class="comment">{{value.comment}}</p>
+    <p class="point-city"><img src="img/position.jpg" width="9" height="11">{{value.city}} {{value.area}}</p>
+  </div>
+</li>
+  {{/each}}
+</script>
+<!-- build:js -->
+<script type="text/javascript" src="js/serviceComment.js"></script>
+<!-- endbuild -->
+</html>

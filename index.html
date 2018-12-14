@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>到位</title>
+  <!-- build:less -->
+  <!-- endbuild -->
+  <link href="./less/index.css" rel="stylesheet">
+  <link href="https://cdn.bootcss.com/Swiper/4.3.0/css/swiper.min.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/Swiper/4.3.0/js/swiper.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery/1.3.2/jquery.min.js"></script>
+  <script src="./js/template.js"></script>
+  <!--<script src="https://cdn.bootcss.com/template_js/0.7.1/template.min.js"></script>-->
+</head>
+<body>
+<div id="app">
+  <header class="header-wrap">
+    <div class="header-content clearFix">
+      <a class="daowei-logo" href="index.html">
+        <img src="img/logo.png" alt="logo">
+      </a>
+      <a class="address" href="javascript:;">
+        <i></i>
+        <span>北京</span><span>切换城市</span>
+      </a>
+      <div class="app-nav">
+        <ul class="nav-list">
+          <li><a href="javascript:;" class="active">首页</a></li>
+          <li><a href="javascript:;">到位APP</a></li>
+          <li><a href="serviceProvider.html">服务商</a></li>
+          <li><a href="javascript:;">商家入驻</a></li>
+          <li><a href="javascript:;">关于我们</a></li>
+          <li><a href="javascript:;">商家登录</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="guide-wrap">
+    <div class="swiper-wrap swiper-container">
+      <ul class="swiper-content swiper-wrapper">
+        <li class="swiper-slide"></li>
+        <li class="swiper-slide"></li>
+      </ul>
+      <div class="swiper-pagination my-pagination-current"></div>
+    </div>
+    <div class="left-nav">
+      <div class="service">
+        <ul class="service-items">
+
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="service-wrap">
+
+  </section>
+  <section class="guarantee">
+    <h1>到位<span>服务</span>保障</h1>
+    <p>到位平台担保交易安全，交易未成功100%退款</p>
+    <ul>
+      <li><img src="img/anquan.jpg" alt="baozhang">优选服务</li>
+      <li><img src="img/anquan.jpg" alt="baozhang">全程保障</li>
+      <li><img src="img/anquan.jpg" alt="baozhang">安全无忧</li>
+    </ul>
+    <footer class="hot-city clearFix">
+      <h2>热门城市</h2>
+      <div class="cities">
+        <a href="javascript:;">北京</a>
+        <a href="javascript:;">上海</a>
+        <a href="javascript:;">广州</a>
+        <a href="javascript:;">深圳</a>
+        <a href="javascript:;">成都</a>
+        <a href="javascript:;">天津</a>
+        <a href="javascript:;">南京</a>
+        <a href="javascript:;">杭州</a>
+        <a href="javascript:;">重庆</a>
+        <a href="javascript:;">苏州</a>
+        <a href="javascript:;">武汉</a>
+        <a href="javascript:;">长沙</a>
+        <a href="javascript:;">济南</a>
+        <a href="javascript:;">郑州</a>
+        <a href="javascript:;">西安</a>
+        <a href="javascript:;">沈阳</a>
+        <a href="javascript:;">福州</a>
+        <a href="javascript:;">厦门</a>
+        <a href="javascript:;">南昌</a>
+        <a href="javascript:;">合肥</a>
+        <a href="javascript:;">宁波</a>
+        <a href="javascript:;">无锡</a>
+        <a href="javascript:;">青岛</a>
+        <a href="javascript:;">大连</a>
+        <a href="javascript:;">东莞</a>
+        <a href="javascript:;">佛山</a>
+        <a href="javascript:;">石家庄</a>
+        <a href="javascript:;">哈尔滨</a>
+        <a href="javascript:;">太原</a>
+        <a href="javascript:;">昆明</a>
+        <a href="javascript:;">贵阳</a>
+        <a href="javascript:;">南宁</a>
+        <a href="javascript:;">温州</a>
+      </div>
+    </footer>
+  </section>
+  <section class="cooperation">
+    <div class="partners">
+      <h2>合作伙伴</h2>
+      <ul>
+        <li><img src="img/lairen.jpg" width="100"></li>
+        <li><img src="img/meidao.jpg" width="100"></li>
+        <li><img src="img/qiaomao.png" width="100"></li>
+        <li><img src="img/guanjia.jpg" width="100"></li>
+        <li><img src="img/shanxiu.jpg" width="100"></li>
+        <li><img src="img/jiazheng.png" width="100"></li>
+        <li><img src="img/jiaxiu.jpg" width="100"></li>
+        <li><img src="img/lidashi.jpg" width="100"></li>
+        <li><img src="img/zuomu.jpg" width="100"></li>
+        <li><img src="img/kala.jpg" width="100"></li>
+        <li><img src="img/jiawu.png" width="100"></li>
+        <li><img src="img/hua.jpg" width="100"></li>
+        <li><img src="img/meidao.jpg" width="100"></li>
+        <li><img src="img/hushi.png" width="100"></li>
+        <li><img src="img/mifeng.jpg" width="100"></li>
+        <li><img src="img/weixiu.jpg" width="100"></li>
+        <li><img src="img/jiaji.jpg" width="100"></li>
+        <li><img src="img/xiaohushi.jpg" width="100"></li>
+      </ul>
+      <p>©2015 版权所有 到位 daoway.com 京ICP备15001471号-1 北京邻家科技有限公司</p>
+    </div>
+  </section>
+</div>
+<script id="left-nav" type="text/html">
+  {{each data as value i}}
+  <li>
+    <a href="javascript:;">{{value.serviceIndex}}<img src="img/right.png" alt="right"><i></i></a>
+  <ul class="workers">
+      {{each value.serviceType as item i}}
+      <li><a href="javascript:;">{{item}}</a></li>
+      {{/each}}
+  </ul>
+  </li>
+    {{/each}}
+</script>
+<script id="service-list" type="text/html">
+    {{each data as value i}}
+    {{if i%2===0}}
+    <section class="service-content">
+        {{else}}
+        <section class="service-content odd">
+            {{/if}}
+            <h1>{{value.serviceIndex}}</h1>
+            <div class="work-type">
+                <ul>
+                    {{each value.serviceType as type i}}
+                    <li><a href="javascript:;">{{type}}</a></li>
+                    {{/each}}
+                </ul>
+                <a href="javascript:;" class="more-service">更多服务&gt;</a>
+            </div>
+            <div class="service-info">
+                <ul class="service-list clearFix">
+                    {{each value.shopList as shop i}}
+                    <li>
+                        <a href="" class="item">
+                            <img src={{shop.imgUrl}} alt="service" width="210" height="210">
+                            <h2>{{shop.serviceName}}</h2>
+                            <p>{{shop.description}}</p>
+                            <div class="price">
+                                <i><span>{{shop.price}}</span>元/小时</i>
+                                <div class="watchinfo">查看详情</div>
+                            </div>
+                        </a>
+                    </li>
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="service-store">
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+                <a href="javascript:;">云家政</a>
+
+            </div>
+        </section>
+        {{/each}}
+</script>
+
+</body>
+<!-- build:js -->
+<script type="text/javascript" src="js/index.js"></script>
+<!-- endbuild -->
+</html>

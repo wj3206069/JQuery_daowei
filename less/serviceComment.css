@@ -1,0 +1,696 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v4.0 | 20180602
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.clearFix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.clearFix:before {
+  content: '';
+  display: table;
+  clear: both;
+}
+a {
+  text-decoration: none;
+}
+body {
+  color: #333;
+  font: 14px/1.14 "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
+}
+#app {
+  min-width: 1200px;
+  font-family: latoregular, Verdana, sans-serif;
+  background-color: #F8F8F8;
+}
+#app .header-wrap {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  box-sizing: border-box;
+}
+#app .header-wrap.header-fixed {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12);
+  background-color: rgba(255, 255, 255, 0.96);
+}
+#app .header-wrap .header-content {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+#app .header-wrap .header-content .daowei-logo {
+  display: block;
+  float: left;
+  margin-top: 11px;
+}
+#app .header-wrap .header-content .daowei-logo img {
+  display: block;
+}
+#app .header-wrap .header-content .address {
+  float: left;
+  display: block;
+  margin-top: 25px;
+  margin-left: 177px;
+}
+#app .header-wrap .header-content .address i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/citypoint.png");
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin-right: -5px;
+}
+#app .header-wrap .header-content .address span {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+#app .header-wrap .header-content .address > span:first-of-type {
+  margin-right: 5px;
+}
+#app .header-wrap .header-content .app-nav .nav-list {
+  float: left;
+  margin: 25px 0 27px 65px;
+}
+#app .header-wrap .header-content .app-nav .nav-list li {
+  float: left;
+}
+#app .header-wrap .header-content .app-nav .nav-list li a {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 15px;
+  transition: color 0.5s;
+}
+#app .header-wrap .header-content .app-nav .nav-list li a.active {
+  color: #e94840;
+}
+#app .header-wrap .header-content .app-nav .nav-list li a:hover {
+  color: #e94840;
+}
+#app .header-wrap .header-content .app-nav .nav-list > li:last-child a {
+  background: #e94840;
+  padding: 4px 6px;
+  color: #fff;
+  border-radius: 5px;
+  margin-right: 0px;
+}
+#app .service-info {
+  margin: 10px auto 0;
+  background: #fff;
+  box-sizing: border-box;
+}
+#app .service-info .service-wrap {
+  width: 1200px;
+  height: 140px;
+  margin: 0 auto;
+}
+#app .service-info .service-wrap h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  float: left;
+  margin-left: 20px;
+  margin-top: 60px;
+}
+#app .service-info .service-wrap .businessHours {
+  float: left;
+  color: #929292;
+  margin-top: 80px;
+  margin-left: 10px;
+}
+#app .service-info .service-wrap .businessHours .time1 {
+  color: #121212;
+}
+#app .service-info .service-wrap .businessHours .time2 {
+  color: #e84b47;
+}
+#app .service-info .service-wrap .service-data {
+  display: flex;
+  align-items: center;
+  float: right;
+  margin-top: 65px;
+  margin-right: 35px;
+}
+#app .service-info .service-wrap .service-data div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#app .service-info .service-wrap .service-data div .count {
+  color: #e84b47;
+}
+#app .service-info .service-wrap .service-data div .count-info {
+  margin-top: 5px;
+}
+#app .service-info .service-wrap .service-data .verticalLine {
+  display: block;
+  width: 2px;
+  height: 19px;
+  background-color: #e5e5e5;
+  margin: 0 25px;
+}
+#app .user-nav {
+  background: #323434;
+}
+#app .user-nav div {
+  width: 1200px;
+  margin: 0 auto;
+  background: #323434;
+  height: 40px;
+}
+#app .user-nav div ul li {
+  width: 140px;
+  height: 40px;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  line-height: 40px;
+}
+#app .user-nav div ul li.on {
+  background-color: #424242;
+}
+#app .user-nav div ul li a {
+  color: #fff;
+}
+#app .introduce {
+  width: 1200px;
+  margin: 22px auto 50px;
+}
+#app .introduce .left-wrap {
+  width: 960px;
+  float: left;
+}
+#app .introduce .left-wrap .service-item {
+  background-color: #fff;
+}
+#app .introduce .left-wrap .service-item .service-item-header {
+  width: 95%;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  margin-left: 3%;
+  box-sizing: border-box;
+}
+#app .introduce .left-wrap .service-item .service-item-header h1 {
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  color: #121212;
+  box-sizing: border-box;
+  border-bottom: 4px solid #fb474f;
+  float: left;
+}
+#app .introduce .left-wrap .service-item a {
+  display: block;
+  border-bottom: 1px solid #e5e5e5;
+  box-sizing: border-box;
+}
+#app .introduce .left-wrap .service-item a:hover {
+  background-color: #F8F8F8;
+}
+#app .introduce .left-wrap .service-item a .imgwrap {
+  float: left;
+}
+#app .introduce .left-wrap .service-item a .imgwrap img {
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  border: 1px solid #e5e5e5;
+  margin: 25px;
+}
+#app .introduce .left-wrap .service-item a .information {
+  float: left;
+  width: 64%;
+  margin-top: 25px;
+}
+#app .introduce .left-wrap .service-item a .information h2 {
+  line-height: 42px;
+  height: 42px;
+  font-size: 18px;
+  color: #1d1515;
+}
+#app .introduce .left-wrap .service-item a .information .service-description {
+  color: #929292;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 99%;
+  line-height: 42px;
+  height: 42px;
+}
+#app .introduce .left-wrap .service-item a .information .price-info {
+  color: #898989;
+  margin-top: 20px;
+  position: relative;
+}
+#app .introduce .left-wrap .service-item a .information .price-info span {
+  font-size: 14px;
+  color: #fc545e;
+  font-weight: bold;
+}
+#app .introduce .left-wrap .service-item a .information .price-info span.bigprice {
+  font-size: 30px;
+}
+#app .introduce .left-wrap .service-item a .information .price-info > span {
+  margin-right: 20px;
+}
+#app .introduce .left-wrap .service-item a .information .price-info em {
+  text-decoration: line-through;
+}
+#app .introduce .left-wrap .service-item a .information .price-info i {
+  position: absolute;
+  right: -90px;
+  top: 32px;
+}
+#app .introduce .left-wrap .introduction {
+  background-color: #fff;
+  margin-top: 70px;
+}
+#app .introduce .left-wrap .introduction .service-item-header {
+  width: 95%;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  margin-left: 3%;
+  box-sizing: border-box;
+}
+#app .introduce .left-wrap .introduction .service-item-header h1 {
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  color: #121212;
+  box-sizing: border-box;
+  border-bottom: 4px solid #fb474f;
+  float: left;
+}
+#app .introduce .left-wrap .introduction .business-name h2 {
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  margin: 10px 25px;
+  box-sizing: border-box;
+}
+#app .introduce .left-wrap .introduction .business-name h2 img {
+  vertical-align: text-bottom;
+  margin-left: 10px;
+}
+#app .introduce .left-wrap .introduction .business-name p {
+  line-height: 28px;
+  padding: 10px 25px 25px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+#app .introduce .left-wrap .user-comment {
+  background-color: #fff;
+  margin-top: 10px;
+}
+#app .introduce .left-wrap .user-comment .service-item-header {
+  width: 95%;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  margin-left: 3%;
+  box-sizing: border-box;
+  line-height: 60px;
+}
+#app .introduce .left-wrap .user-comment .service-item-header h1 {
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  color: #121212;
+  box-sizing: border-box;
+  border-bottom: 4px solid #fb474f;
+  float: left;
+}
+#app .introduce .left-wrap .user-comment .service-item-header span {
+  color: #121212;
+  margin-left: 15px;
+}
+#app .introduce .left-wrap .user-comment ul li {
+  width: 96%;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 0 3%;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+#app .introduce .left-wrap .user-comment ul li > img {
+  border-radius: 6px;
+  display: inline-block;
+  vertical-align: top;
+}
+#app .introduce .left-wrap .user-comment ul li > .comment-content {
+  display: inline-block;
+  margin-left: 20px;
+  width: 92%;
+  box-sizing: border-box;
+}
+#app .introduce .left-wrap .user-comment ul li > .comment-content .username {
+  height: 28px;
+  line-height: 28px;
+}
+#app .introduce .left-wrap .user-comment ul li > .comment-content .date {
+  height: 28px;
+  line-height: 28px;
+}
+#app .introduce .left-wrap .user-comment ul li > .comment-content .date span {
+  margin-right: 10px;
+}
+#app .introduce .left-wrap .user-comment ul li > .comment-content .comment {
+  line-height: 26px;
+  font-size: 16px;
+}
+#app .introduce .left-wrap .user-comment ul li > .comment-content .point-city {
+  height: 40px;
+  color: #898989;
+  line-height: 28px;
+  margin-top: 15px;
+}
+#app .introduce .left-wrap .user-comment ul li > .comment-content .point-city img {
+  margin-right: 10px;
+}
+#app .introduce .left-wrap .paging {
+  width: 100%;
+  margin: 0 auto;
+  height: 152px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#app .introduce .left-wrap .paging ul {
+  display: flex;
+  justify-content: center;
+}
+#app .introduce .left-wrap .paging ul li {
+  cursor: pointer;
+  text-align: center;
+}
+#app .introduce .left-wrap .paging ul .pgNumber {
+  height: 32px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #121212;
+  width: 30px;
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+  transition: color 0.5s;
+  background-color: #fff;
+  margin: 0 5px;
+}
+#app .introduce .left-wrap .paging ul .pgNumber.pgon {
+  background: #fe454a;
+  color: #fff;
+}
+#app .introduce .left-wrap .paging ul .pgNumber:hover {
+  background: #fe454a;
+  color: #fff;
+}
+#app .introduce .left-wrap .paging ul .btn {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 0;
+  font-size: 14px;
+  color: #121212;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+}
+#app .introduce .left-wrap .paging ul .btn.pgUp {
+  margin-right: 5px;
+}
+#app .introduce .left-wrap .paging ul .btn.pgDn {
+  margin-left: 5px;
+}
+#app .introduce .right-wrap {
+  width: 230px;
+  float: right;
+}
+#app .introduce .right-wrap .img1 {
+  width: 230px;
+  height: 290px;
+  box-sizing: border-box;
+  background-image: url("../img/bgkuang.jpg");
+  background-repeat: no-repeat;
+}
+#app .introduce .right-wrap .img1 img {
+  width: 115px;
+  margin: 55px 0 0 55px;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+#app .introduce .right-wrap .img2 {
+  width: 230px;
+  height: 290px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  background-image: url("../img/bg2.jpg");
+  background-repeat: no-repeat;
+}
+#app .introduce .right-wrap .img2 img {
+  width: 130px;
+  margin: 50px 0 0 50px;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+#app .guarantee {
+  padding-top: 80px;
+  background-color: #fff;
+}
+#app .guarantee h1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "微软雅黑";
+  font-weight: 800;
+}
+#app .guarantee h1 span {
+  color: #fb474f;
+}
+#app .guarantee p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 22px;
+  color: #3d3838;
+}
+#app .guarantee ul {
+  margin-top: 20px;
+  text-align: center;
+}
+#app .guarantee ul li {
+  display: inline-block;
+  margin-right: 40px;
+  font-size: 18px;
+}
+#app .guarantee ul li img {
+  vertical-align: text-bottom;
+  margin-right: 10px;
+}
+#app .guarantee ul > li:last-child {
+  margin-right: 0;
+}
+#app .guarantee footer {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-bottom: 25px;
+}
+#app .guarantee footer h2 {
+  float: left;
+  font-family: " 微软雅黑";
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+#app .guarantee footer .cities {
+  width: 1090px;
+  float: left;
+  line-height: 30px;
+  margin-left: 30px;
+  font-size: 0;
+}
+#app .guarantee footer .cities a {
+  font-size: 16px;
+  display: inline-block;
+  color: #898989;
+  width: 9%;
+  font-weight: 200;
+  cursor: pointer;
+  font-family: "微软雅黑";
+  text-align: center;
+}
+#app .cooperation {
+  background-color: #FBF8F8;
+}
+#app .cooperation .partners {
+  width: 1200px;
+  margin: 0 auto;
+}
+#app .cooperation .partners h2 {
+  text-align: left;
+  font-weight: bold;
+  color: #1d1515;
+  font-size: 18px;
+  padding-top: 30px;
+}
+#app .cooperation .partners ul {
+  font-size: 0;
+}
+#app .cooperation .partners ul li {
+  height: 60px;
+  margin-top: 15px;
+  margin-right: 10px;
+  width: 10%;
+  line-height: 55px;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  background-color: #fff;
+}
+#app .cooperation .partners ul li img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transform: translateX(-50%);
+}
+#app .cooperation .partners p {
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  color: #898989;
+}
